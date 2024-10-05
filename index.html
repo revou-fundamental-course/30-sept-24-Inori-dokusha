@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Temperatur Calculation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Celcius ke Fahrenheit</h1>
+
+    <div class="container">
+      <div class="user-input">
+        <div class="celcius">
+          <label for="celc">Celcius (ºC)</label>
+          <input
+            type="number"
+            id="celc"
+            name="celcius"
+            placeholder="Input ºC"
+            max="9"
+          />
+        </div>
+        <div class="fahrenheit">
+          <label for="fahr">Fahrenheit(ºF)</label>
+          <input
+            type="number"
+            id="fahr"
+            name="fahrenheit"
+            placeholder="Output ºF"
+            disabled
+          />
+        </div>
+      </div>
+
+      <div class="btn">
+        <button id="convert">Konversi</button>
+        <button id="reset">Reset</button>
+        <button id="reserve">Simpan</button>
+      </div>
+
+      <div class="information">
+        <h4>Perhitungan:</h4>
+        <div class="output">
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
